@@ -8,7 +8,7 @@ public class TesterAssumptionTests {
 
 	@Test
     public void testOnProd() {
-        System.setProperty("ENV", "DEV");
+        System.setProperty("ENV", "PROD");
         Assumptions.assumingThat("DEV".equals(System.getProperty("ENV")), () -> {
             Assertions.assertTrue(false);
         });

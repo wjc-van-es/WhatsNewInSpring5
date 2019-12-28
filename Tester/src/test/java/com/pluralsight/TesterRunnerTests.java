@@ -13,6 +13,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import reactor.core.publisher.Mono;
 
+/**
+ * com.pluralsight.web.reactive.ReactiveApplication of the Reactive project has to be running
+ * for this test to succeed.
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class TesterRunnerTests {
